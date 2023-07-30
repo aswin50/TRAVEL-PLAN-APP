@@ -1,0 +1,448 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.background-img {
+  background-image: url("https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+ 
+}
+
+.left-section {
+  /* Add styles for the left section with quotes */
+  padding: 20px;
+  width: 50%;
+  color: #fff;
+}
+
+.right-section {
+  /* Add styles for the right section with the CreateTripForm and TripList */
+  padding: 20px;
+  width: 50%;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:absolute;
+  top:300px;
+  left:40%;
+  /*margin-right:38%;*/
+}
+
+/* Add styles for the NavBar */
+.navbar {
+  background-color:snow;
+  color:black;
+  padding: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.create-trip-form {
+  width: 50%;
+  margin-bottom: 20px;
+  border:1px solid black ;
+  background: snow;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.create-trip-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-trip-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  column-gap: 5px;
+}
+
+.create-trip-form input[type="text"],
+.create-trip-form input[type="date"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.create-trip-form button {
+  background-color: #00a8cc;
+  color: #fff;
+  border: none;
+  gap:10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-trip-form button:hover {
+  background-color: #008fa2;
+}
+
+.trip-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trip-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width:100%;
+}
+
+.trip-card h2 {
+  margin-top: 0;
+}
+
+.trip-card p {
+  margin: 5px 0;
+}
+
+.trip-card button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  
+}
+.card_buttons{
+  align-items: end;
+}
+.trips
+{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card.css */
+
+.trip-card button:hover {
+  background-color: #e63c1e;
+}
+
+/* Add Activity Form Styling */
+.activity-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  padding:40px;
+}
+
+.activity-form {
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.activity-form input[type="text"],
+.activity-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.activity-form button {
+  background-color: #00a8cc;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.activity-form button:hover {
+  background-color: #008fa2;
+}
+
+/* The popup form container */
+/* Styling for the form container */
+.update-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  padding:40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.update-form {
+  width: 50%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Neat styling for the form elements */
+.update-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.update-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.quotes h1 p{
+  color: snow;
+  font-size: 100px;
+}
+.quotes{
+  margin-left: 10px;
+}
+.activity-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  padding:20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.activity-item{
+  width: 90%;
+  height: 90%;
+  padding:40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.activity_card{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width:100%;
+}
+.activity
+{
+  margin-top: 10px;
+  text-align: center;
+}
+.closebutton{
+  margin-left: 90%;
+}
+.create_trip_popup{
+  display: none;
+}
+.error{
+  color:red;
+}
+@media screen and (max-width: 768px) {
+  body{
+    overflow: auto;
+  }
+  .background-img  {
+    /* Styles for smaller screens */
+    max-width:100%;
+    min-height: 80vh;
+  }
+  .quotes h1 p{
+    color: snow;
+    font-size: 50px;
+  }
+  .quotes{
+    margin-left: 10px;
+    display: none;
+  }
+  .create-trip-form {
+    width: 100%;
+    border: 1px solid black;
+    background: snow;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-right: 68%;
+    /* margin-bottom: 50px; */
+    position: absolute;
+    position: absolute;
+    align-items: center;
+    /* top: 430px; */
+    bottom: -240px;
+  }
+  .create-trip-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-trip-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    column-gap: 5px;
+  }
+  
+  .create-trip-form input[type="text"],
+  .create-trip-form input[type="date"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .create-trip-form button {
+    background-color: #00a8cc;
+    color: #fff;
+    border: none;
+    gap:10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ /* .trip-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width:80%;
+    position: absolute;
+    bottom:-90%;
+    
+  }
+  
+  .trip-card h2 {
+    margin-top: 0;
+  }
+  
+  .trip-card p {
+    margin: 5px 0;
+  }
+  
+  .trip-card button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+  }
+  .card_buttons{
+    align-items: end;
+  }
+  
+*/
+.trips{
+  padding:1px;
+  display: flow-root;
+}
+.trip-card {
+  width: calc(100% - 40px);
+  /*margin: 120% 0;*/
+}
+
+.trip-card h2 {
+  font-size: 18px;
+}
+
+.trip-card p {
+  font-size: 14px;
+}
+
+.trip-card button {
+  font-size: 14px;
+    margin: 5px 0 0 3px;
+}
+
+.card_buttons {
+  justify-content: flex-start;
+}
+
+.trip-list {
+  padding: 10px;
+}
+.create_trip_popup{
+  background-color: #00a8cc;
+  color: #fff;
+  border: none;
+  gap:10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar {
+  background-color:snow;
+  color:black;
+  padding: 10px;
+  text-align: start;
+}
+.activity-form {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.update-form {
+  width: 80%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+}
